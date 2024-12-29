@@ -1,66 +1,28 @@
-## Foundry
+# FundMe
 
-**Foundry is a blazing fast, portable and modular toolkit for Ethereum application development written in Rust.**
+**FundMe** é um contrato inteligente simples desenvolvido com **Solidity** e testado usando o framework **Foundry**. O contrato permite que usuários enviem fundos para um contrato e, posteriormente, o proprietário do contrato pode retirar os fundos arrecadados. 
 
-Foundry consists of:
+Este projeto foi criado para fins educacionais e serve como um exemplo prático de um contrato de arrecadação de fundos.
 
--   **Forge**: Ethereum testing framework (like Truffle, Hardhat and DappTools).
--   **Cast**: Swiss army knife for interacting with EVM smart contracts, sending transactions and getting chain data.
--   **Anvil**: Local Ethereum node, akin to Ganache, Hardhat Network.
--   **Chisel**: Fast, utilitarian, and verbose solidity REPL.
+## Funcionalidades
 
-## Documentation
+- **Fundar o contrato**: Os usuários podem enviar Ethereum para o contrato usando a função `fund()`.
+- **Retirar fundos**: Somente o proprietário do contrato pode retirar os fundos acumulados usando a função `withdraw()`.
+- **Testes**: Os testes garantem que a função de enviar e retirar fundos funciona corretamente.
 
-https://book.getfoundry.sh/
+## Pré-requisitos
 
-## Usage
+Antes de começar, você precisará ter as seguintes ferramentas instaladas no seu sistema:
 
-### Build
+- [Node.js](https://nodejs.org/) - Para o gerenciamento de dependências e execução de scripts.
+- [Foundry](https://getfoundry.sh/) - Para compilar, testar e interagir com contratos Solidity.
 
-```shell
-$ forge build
-```
+## Como Configurar o Projeto
 
-### Test
+### 1. Clone o repositório
 
-```shell
-$ forge test
-```
+Clone o repositório para a sua máquina local:
 
-### Format
-
-```shell
-$ forge fmt
-```
-
-### Gas Snapshots
-
-```shell
-$ forge snapshot
-```
-
-### Anvil
-
-```shell
-$ anvil
-```
-
-### Deploy
-
-```shell
-$ forge script script/Counter.s.sol:CounterScript --rpc-url <your_rpc_url> --private-key <your_private_key>
-```
-
-### Cast
-
-```shell
-$ cast <subcommand>
-```
-
-### Help
-
-```shell
-$ forge --help
-$ anvil --help
-$ cast --help
-```
+```bash
+git clone https://github.com/seu-usuario/fund-me.git
+cd fund-me
