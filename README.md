@@ -24,5 +24,5 @@ Antes de começar, você precisará ter as seguintes ferramentas instaladas no s
 Clone o repositório para a sua máquina local:
 
 ```bash
-git clone https://github.com/seu-usuario/fund-me.git
-cd fund-me
+git clone https://github.com/leumiranda/fundme.git
+cd fundme
